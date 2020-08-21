@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- css -->
+   <link rel="stylesheet" href="/css/reset.css">
+   <link rel="stylesheet" href="/css/style.css">
+  <title>A_K Portfolio Contact</title>
+</head>
+
+<body>
+    <section id="contact">
+      <div id="js-container" class="container">
+
+        <div class="contact-logo">
+          <a href="index.html"><img src="/images/A_k-logo.png" alt=""></a></div>
+        <div class="section-title">お問い合わせ</div>
+        <div class="form-info">
+          <span class="contact-inline">*</span>は入力必須事項です。
+        </div>
+        
+        <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdY9_zQY3sw55-WwvwvJ-s_fsg47uiAgOBvhcOzTXuvuBa4Ow/formResponse" class="contact-form" method="POST" name="myForm" target="dummyIframe">
+          <dl class="contact-list">
+            <div class="contact-item">
+              <dt class="contact-item-title">
+                お名前<span class="contact-item-inline">*</span>
+              </dt>
+              <dd class="contact-item-input">
+                <input type="text" name="entry.1656762776" placeholder="name" required>
+              </dd>
+            </div>
+            <div class="contact-item">
+              <dt class="contact-item-title">
+                メールアドレス<span class="contact-item-inline">*</span>
+              </dt>
+              <dd class="contact-item-input">
+                <input type="email" name="emailAddress" placeholder="mail" required>
+              </dd>
+            </div>
+            <div class="contact-item">
+              <dt class="contact-item-title">
+                お問い合わせ内容<span class="contact-item-inline">*</span>
+              </dt>
+              <dd class="contact-item-input">
+                <textarea name="entry.303712492" placeholder="???" required></textarea>
+              </dd>
+            </div>
+          </dl>
+          <div class="contact-footer-submit">
+            <input class="contact-btn" type="button" value="送信" onclick="submitForm()">
+          </div>
+        </form>
+        <iframe name="dummyIframe" style="display:none;"></iframe>  
+      </div>
+      <div id="thx-message">
+        <img src="/images/A_k-logo.png" alt="">
+        <p>送信完了しました。<br>
+          お問い合わせありがとうございます。</p>
+      </div>
+    </section>
+    
+    
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+
+    <script>
+      function submitForm(){
+        document.myForm.submit();
+        document.getElementById('js-container').style.display = 'none';
+        document.getElementById('thx-message').style.display = 'block';
+      }
+    </script>
+    
+  </body>
+</html>
