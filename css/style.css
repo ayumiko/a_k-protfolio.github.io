@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is-sm {
+    display: none;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: '遊ゴシック',"Yu Gothic", yugothic, sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 34px;
+}
+
+#header .header-logo img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  #header .header-logo img {
+    width: 150px;
+    height: 150px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header button {
+    margin-top: 40px;
+    margin-right: 30px;
+  }
+}
+
+#header .drawer-nav {
+  background-color: #b1d4f7;
+}
+
+#header .header-list-item {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#header .header-list-item a {
+  color: #fff;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  #introduction {
+    height: 500px;
+  }
+}
+
+#introduction .container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #introduction .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #introduction .section-title {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #introduction .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #introduction .introduction-text {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #introduction .introduction-text {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #introduction .about-me-img {
+    width: 40%;
+  }
+}
+
+#introduction .about-me-img img {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  #introduction .about-me-img img {
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+  }
+}
+
+#introduction .skill {
+  margin-top: 50px;
+}
+
+#introduction .skill-title {
+  background-color: #fff7d2;
+  display: inline-block;
+}
+
+#introduction .skill-list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#introduction .skill-list .skill-item + .skill-item {
+  margin-left: 20px;
+}
+
+#introduction .skill-list i {
+  font-size: 34px;
+  display: block;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #b1d4f7;
+  color: #333;
+}
+
+footer .footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-list {
+    width: 90%;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-list {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-list .footer-list-item {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-list .footer-list-item {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+footer .footer-list a {
+  color: #333;
+  font-size: 20px;
+}
+
+footer .footer-sns {
+  margin-top: 50px;
+  margin-left: auto;
+  display: flex;
+}
+
+footer .footer-sns .footer-sns-item {
+  margin-right: 30px;
+}
+
+footer .footer-sns i {
+  font-size: 30px;
+}
+
+footer .logo-info {
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+footer .footer-text {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+#works {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #works .section-title {
+    margin: 0 0 50px 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #works .section-title {
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #works .works-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+#works .works-container {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #works .works-container {
+    display: flex;
+  }
+}
+
+#works .works-img {
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#works .works-img img {
+  width: 300px;
+  height: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  #works .works-img img {
+    width: 250px;
+  }
+}
+
+#works .works-img imghover {
+  opacity: 0.7;
+}
+
+#works .works-img .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+#works .works-img .bigimg {
+  position: absolute;
+  width: 100%;
+  max-width: 1000px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-40%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#works .works-img .bigimg img {
+  width: 800px;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #works .works-img .bigimg img {
+    width: 80%;
+  }
+}
+
+#works .works-img .close-btn {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  #works .works-img .close-btn {
+    right: 30px;
+    top: 30px;
+  }
+}
+
+#works .works-img .close-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#works .works-rede {
+  padding: 1em;
+  position: relative;
+  border: 1px solid #555;
+}
+
+@media screen and (min-width: 768px) {
+  #works .works-rede {
+    margin: 0 0 30px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #works .works-rede {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+#works .works-rede .works-title {
+  position: absolute;
+  top: -0.8em;
+  left: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: #fff;
+  padding: 0 0.5em;
+}
+
+#works .works-rede p {
+  margin: 0;
+  padding: 0;
+}
+
+#works .link-name {
+  display: block;
+  text-align: center;
+  color: #b1d4f7;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  background-color: #fff7d2;
+}
+
+#contact {
+  width: 100%;
+  background-color: #fff7d2;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact .contact-logo {
+    margin-top: -80px;
+  }
+}
+
+#contact .container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  #contact .container {
+    max-width: 1200px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact .section-title {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact .section-title {
+    margin-top: -50px;
+    font-size: 26px;
+  }
+}
+
+#contact .form-info {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#contact .form-info .contact-inline {
+  font-size: 20px;
+  color: red;
+}
+
+#contact .contact-list {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #contact .contact-list {
+    max-width: 600px;
+  }
+}
+
+#contact .contact-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #contact .contact-item {
+    display: flex;
+  }
+}
+
+#contact .contact-item-input {
+  flex: 0 0 300px;
+}
+
+#contact .contact-item-title {
+  flex: 0 1 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  padding: .2em .5em;
+  box-shadow: 10px 10px 10px rgba(96, 96, 96, 0.16);
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+  height: 40px;
+}
+
+#contact textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+#contact .contact-btn {
+  border: 1px solid #333;
+  padding: 10px 50px;
+  box-shadow: 10px 10px 10px rgba(96, 96, 96, 0.16);
+  background-color: #fff7d2;
+}
+
+#contact .contact-item-inline {
+  color: red;
+}
+
+#thx-message {
+  padding-top: 100px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #thx-message {
+    padding-bottom: 250px;
+  }
+}
+
+#thx-message img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  #thx-message img {
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+  }
+}
